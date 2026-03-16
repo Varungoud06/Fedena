@@ -1,14 +1,13 @@
 package com.example.school.dto.responsedto;
 
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
-@Getter
-@Setter
-@NoArgsConstructor
+@Data
 @AllArgsConstructor
-@Builder
+@NoArgsConstructor
 public class ApiResponse<T> {
-
     private boolean success;
     private String message;
     private T data;
